@@ -1,6 +1,7 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const escrowRoutes = require("./routes/escrow");
+import express from "express";
+import bodyParser from "body-parser";
+import escrowRoutes from "./routes/escrow.js";
+import abi from '../abi/Escrow.json' assert { type: "json" };
 
 const app = express();
 const PORT = 3001;
